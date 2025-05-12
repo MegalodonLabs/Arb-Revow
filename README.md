@@ -23,22 +23,7 @@ The Arb Revow workflow can be summarized in the following steps:
 
 The Arb Revow architecture consists of several interconnected components:
 
-```
-+-------------------+     +-------------------+     +-------------------+
-|                   |     |                   |     |                   |
-|  Frontend React   |<--->|  Web3 Provider   |<--->|  Arbitrum Sepolia |
-|                   |     |  (MetaMask)      |     |  (Smart Contract) |
-+-------------------+     +-------------------+     +-------------------+
-         ^                                                   ^
-         |                                                   |
-         v                                                   v
-+-------------------+                               +-------------------+
-|                   |                               |                   |
-|  IPFS Storage     |                               |  Local Storage    |
-|  (Metadata)       |                               |  (Attestations)   |
-|                   |                               |                   |
-+-------------------+                               +-------------------+
-```
+![Preview da Dapp](https://i.postimg.cc/gkg8y1bf/arc-dapp.png)
 
 ### Main Components:
 
