@@ -1,0 +1,270 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "pledgesByAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "pledgor",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "projectName",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "location",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "enum RevowRegistry.CommitmentType",
+        "name": "commitmentType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "percentage",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "startDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "ipfsHash",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_projectName",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_location",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "enum RevowRegistry.CommitmentType",
+        "name": "_commitmentType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_percentage",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_startDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_ipfsHash",
+        "type": "string"
+      }
+    ],
+    "name": "registerPledge",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pledgor",
+        "type": "address"
+      }
+    ],
+    "name": "getPledgesByAddress",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "pledgor",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "projectName",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "location",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "enum RevowRegistry.CommitmentType",
+            "name": "commitmentType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "percentage",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RevowRegistry.Pledge[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllPledges",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "pledgor",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "projectName",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "location",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "enum RevowRegistry.CommitmentType",
+            "name": "commitmentType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "percentage",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "ipfsHash",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RevowRegistry.Pledge[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pledgor",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "projectName",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "location",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum RevowRegistry.CommitmentType",
+        "name": "commitmentType",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "percentage",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "startDate",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "ipfsHash",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "PledgeRegistered",
+    "type": "event"
+  }
+]
